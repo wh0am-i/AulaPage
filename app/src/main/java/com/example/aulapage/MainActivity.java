@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager fm = getSupportFragmentManager();
         Adaptador adaptador = new Adaptador(fm, getLifecycle());
         pager.setAdapter(adaptador);
-        tab.addTab(tab.newTab().setText("Nome"));
-        tab.addTab(tab.newTab().setText("Turma"));
-        tab.addTab(tab.newTab().setText("Cidade"));
-        tab.addTab(tab.newTab().setText("Time"));
+        tab.addTab(tab.newTab().setText("Nome Btt"));
+        tab.addTab(tab.newTab().setText("CalcHoras"));
+        tab.addTab(tab.newTab().setText("JRandom"));
+        tab.addTab(tab.newTab().setText("Camera"));
         tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
