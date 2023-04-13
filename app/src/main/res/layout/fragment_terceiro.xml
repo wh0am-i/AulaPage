@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/btn3"
             android:layout_width="181dp"
             android:layout_height="50dp"
             android:backgroundTint="#FF0505"
@@ -22,11 +22,5 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.004" />
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="178dp"
-            tools:layout_editor_absoluteY="327dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

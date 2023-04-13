@@ -8,18 +8,160 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:context=".calcHoras">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="189dp"
-            android:layout_height="56dp"
-            android:backgroundTint="#88FF00"
-            android:text="2°B"
+        <EditText
+            android:id="@+id/newMinuto2"
+            android:layout_width="63dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="00"
+            android:inputType="number"
+            android:textSize="48sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/newMinuto"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <EditText
+            android:id="@+id/newHora"
+            android:layout_width="63dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="00"
+            android:inputType="number"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="0.676"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horaReal"
+            app:layout_constraintVertical_bias="0.049" />
+
+        <TextView
+            android:id="@+id/minutoReal"
+            android:layout_width="54dp"
+            android:layout_height="64dp"
+            android:text="00"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toEndOf="@+id/horaReal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="12dp"
+            android:layout_height="64dp"
+            android:text=":"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.056" />
+
+        <TextView
+            android:id="@+id/horaReal"
+            android:layout_width="54dp"
+            android:layout_height="64dp"
+            android:text="00"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="0.696"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <Button
+            android:id="@+id/subBtt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtrair"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.549"
+            app:layout_constraintStart_toEndOf="@+id/somarBtt"
+            app:layout_constraintTop_toBottomOf="@+id/newMinuto2"
+            app:layout_constraintVertical_bias="0.24" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="12dp"
+            android:layout_height="64dp"
+            android:text=":"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0.047" />
+
+        <EditText
+            android:id="@+id/newMinuto"
+            android:layout_width="63dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="00"
+            android:inputType="number"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/minutoReal"
+            app:layout_constraintVertical_bias="0.049" />
+
+        <EditText
+            android:id="@+id/newHora2"
+            android:layout_width="63dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="00"
+            android:inputType="number"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView12"
+            app:layout_constraintHorizontal_bias="0.676"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newHora"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <Button
+            android:id="@+id/somarBtt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Somar"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newHora2"
+            app:layout_constraintVertical_bias="0.24" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="12dp"
+            android:layout_height="64dp"
+            android:text=":"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.052" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>
